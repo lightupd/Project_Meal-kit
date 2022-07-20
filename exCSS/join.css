@@ -1,0 +1,77 @@
+html {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+body {
+    width: 40%;
+    border: 1px solid black;
+}
+input {
+    border: 1px solid black;
+    border-radius: 3px;
+    line-height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* 7/18 */
+/* 7/19 input 추가*/
+
+
+.container {
+    padding: 10px;
+}
+div {
+    padding-top: 4px;
+    padding-bottom: 8px;
+}
+
+#title {
+    text-align: center;
+    font-size: 700;
+}
+.email input {
+    width: 60%;
+}
+.name input {
+    width: 60%;
+}
+.password input{
+    width: 60%;
+}
+.id input{
+    width: 60%;
+}
+.phoneNumber{
+    display: flex;
+    justify-content: space-between;
+    line-height: 32px;
+}
+.phoneNumber input {
+    width: 40%;
+    font-size: 14px;
+}
+/* 7/18 container, div 작성 */
+/* 7/19 title, email input 외 6개 추가 */
+
+.area select{
+    width: 60%;
+    height: 30px;
+}
+.join button{
+    cursor: pointer;
+    height: 25px;
+}
+.gender{
+    text-align: center;
+}
+
+#join {
+    width: 85px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+}

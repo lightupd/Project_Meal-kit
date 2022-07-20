@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<body>
+    <div class="container">
+        <div class="email">
+            <h2 id="title">회원가입</h2>
+            <input id="email" type="text" placeholder="이메일을 입력해주세요" focus>
+            <!-- 이메일 -->
+        </div>
+        <div class="name">
+            <input id="name" type="text" placeholder="이름을 입력해주세요" focus>
+            <!-- 이름 -->
+        </div>
+        <div class="id">
+            <input id="id" maxlength="30" type="text" placeholder="아이디를 30자리내로 입력해주세요" focus>
+            <!-- 아이디 -->
+        </div>
+        <div class="password">
+            <input id="password" maxlength="30" type="password" placeholder="비밀번호를 30자리내로 입력해주세요" focus>
+            <!-- 패스워드 -->
+        </div>
+        <div class="phoneNumber">
+            <input id="phoneNumber" type="text" maxlength="12" placeholder="핸드폰 번호를 - 없이 입력해주세요" focus>
+            <!-- 핸드폰 국외도 포함한다는 가정하에 -->
+        </div>
+        <div class="area">
+            <select id="area">
+                <option selected disabled>지역을 선택해주세요</option>
+                <option>서울</option>
+                <option>부산</option>
+                <option>경기</option>
+                <option>강원</option>
+                <option>경북</option>
+                <option>경남</option>
+                <option>충청</option>
+                <option>전남</option>
+                <option>전북</option>
+                <option>제주</option>
+            </select>
+            <!-- 7/19 지역선택 수정 -->
+        </div>
+        <div class="birth">
+            <input id="birth" type="date">
+            <input type="submit" value="입력">
+            <!-- 생일 -->
+        </div>
+        <div class="gender">
+            <input id="gender" name="gender" type="radio">남성
+            <input id="gender" name="gender" type="radio">여성
+            <!-- 성별 -->
+            <!-- 7/19 성별선택 수정 -->
+        </div>
+        <hr>
+        <div class="join">
+            <button id="join">가입하기</button>
+            <!-- 입력완료 시 누르는 버튼 -->
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="exCSS/join.CSS">
+    <script src="exJS/join.js"></script>
+    <!-- 7/19 회원가입 기본폼 -->
+</body>
+</html>
