@@ -10,49 +10,53 @@
     <div class="container">
         <div class="email">
             <h2 id="title">회원가입</h2>
-            <input id="email" type="text" placeholder="이메일을 입력해주세요" focus>
+            <input id="email" type="email" placeholder="이메일을 입력해주세요" focus>
             <!-- 이메일 -->
         </div>
         <div class="name">
-            <input id="name" type="text" placeholder="이름을 입력해주세요" focus>
+            <input id="name" type="text" placeholder="이름을 입력해주세요">
             <!-- 이름 -->
         </div>
         <div class="id">
-            <input id="id" maxlength="30" type="text" placeholder="아이디를 30자리내로 입력해주세요" focus>
+            <input id="id" maxlength="30" type="text" placeholder="아이디를 30자리내로 입력해주세요">
             <!-- 아이디 -->
         </div>
         <div class="password">
-            <input id="password" maxlength="30" type="password" placeholder="비밀번호를 30자리내로 입력해주세요" focus>
+            <input id="password" maxlength="30" type="password" placeholder="비밀번호를 30자리내로 입력해주세요">
             <!-- 패스워드 -->
         </div>
         <div class="phoneNumber">
-            <input id="phoneNumber" type="text" maxlength="12" placeholder="핸드폰 번호를 - 없이 입력해주세요" focus>
+            <input id="phoneNumber" type="text" maxlength="12" placeholder="핸드폰 번호를 - 없이 입력해주세요">
             <!-- 핸드폰 국외도 포함한다는 가정하에 -->
         </div>
-        <div class="area">
-            <select id="area">
-                <option selected disabled>지역을 선택해주세요</option>
-                <option>서울</option>
-                <option>부산</option>
-                <option>경기</option>
-                <option>강원</option>
-                <option>경북</option>
-                <option>경남</option>
-                <option>충청</option>
-                <option>전남</option>
-                <option>전북</option>
-                <option>제주</option>
-            </select>
-            <!-- 7/19 지역선택 수정 -->
-        </div>
         <div class="birth">
-            <input id="birth" type="date">
-            <input type="submit" value="입력">
-            <!-- 생일 -->
+            <div id="birth_yy">
+                <input id="yy" type="text" maxlength="4">
+            </div>
+            <div id="birth_mm">
+                <select id="mm">
+                    <option>월</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div id="birth_dd">
+                <input id="dd" type="text" maxlength="2">
+            </div>
         </div>
         <div class="gender">
-            <input id="gender" name="gender" type="radio">남성
-            <input id="gender" name="gender" type="radio">여성
+            <input id="gender" name="gender" value="gender" type="radio" checked>남성
+            <input id="gender" name="gender" value="gender" type="radio">여성
             <!-- 성별 -->
             <!-- 7/19 성별선택 수정 -->
         </div>

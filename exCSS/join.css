@@ -27,6 +27,7 @@ input {
 div {
     padding-top: 4px;
     padding-bottom: 8px;
+    text-align: center;
 }
 
 #title {
@@ -46,9 +47,9 @@ div {
     width: 60%;
 }
 .phoneNumber{
-    display: flex;
     justify-content: space-between;
     line-height: 32px;
+    text-align: center;
 }
 .phoneNumber input {
     width: 40%;
@@ -56,6 +57,26 @@ div {
 }
 /* 7/18 container, div 작성 */
 /* 7/19 title, email input 외 6개 추가 */
+
+#birth_yy {
+    display: table-cell;
+    width: 147px;
+}
+
+#birth_mm {
+    display: table-cell;
+    width: 147px;
+    vertical-align: middle;
+}
+
+#birth_dd {
+    display: table-cell;
+    width: 147px;
+}
+
+#birth_mm, #birth_dd {
+    padding-left: 10px;
+}
 
 .area select{
     width: 60%;
